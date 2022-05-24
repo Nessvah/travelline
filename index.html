@@ -17,13 +17,50 @@
     <div class="container">
       <header class="header">
         <img src="/imgs/logo.png" alt="Travelline logo" class="logo" />
+
         <form action="#" class="search">
           <input
             type="text"
             class="search__input"
             placeholder="Search for hotels"
           />
+          <button class="search__btn">
+            <object
+              class="search__icon"
+              data="/imgs/search.svg"
+              width="50px"
+              height="50px"
+            ></object>
+          </button>
         </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <object
+              data="/imgs/bookmark.svg"
+              width="50px"
+              height="50px"
+              type=""
+            ></object>
+            <span class="user nav__notification">3</span>
+          </div>
+
+          <div class="user-nav__icon-box">
+            <object
+              data="/imgs/chat.svg"
+              width="50px"
+              height="50px"
+              type=""
+            ></object>
+            <span class="user-nav__notification">8</span>
+          </div>
+          <div class="user-nav__user">
+              <img src="/imgs/user.jpg" width="50px" height="50px" alt="User phoyo" class="user-nav__user-photo">
+          </div>
+          <span class="user-nav__user-name">Vanessa</span>
+          
+          </div>
+        </nav>
       </header>
       <div class="main-content">
         <nav class="sidebar-nav">Navigation</nav>
