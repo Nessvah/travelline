@@ -2,15 +2,52 @@
 
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 // SEARCH BAR
 
 .search {
+  flex: 0 0 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--grey-light-2);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 10rem;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -3.5rem; // This way the search icon will move on top of the input
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--grey-light-3);
+    }
+  }
+
+  &__input:focus + &__btn {
+    background-color: var(--grey-light-3);
   }
 
   &__btn {
+    border: none;
+    background-color: var(--grey-light-2);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
 
   &__icon {
