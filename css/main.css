@@ -68,4 +68,13 @@ body {
   flex: 1;
 }
 
+.logo {
+  height: 3.25rem;
+}
+
+.search__icon {
+  height: 2rem;
+  width: 2rem;
+}
+
 /*# sourceMappingURL=main.css.map */
