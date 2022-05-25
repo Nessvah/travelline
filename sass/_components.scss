@@ -286,3 +286,19 @@
     box-shadow: none;
   }
 }
+
+// PARAGRAPHS
+.text:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+// LIST
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+}
+
+// RECOMMENDATIONS
