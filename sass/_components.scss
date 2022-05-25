@@ -1,3 +1,5 @@
+@use "../sass/base" as *;
+
 // LOGO
 
 .logo {
@@ -116,11 +118,24 @@
   list-style: none;
   margin-top: 3.5rem;
 
+  @media only screen and (max-width: $size-m) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 0.6rem;
+
+      @media only screen and (max-width: $size-m) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media only screen and (max-width: $size-m) {
+      flex: 1;
     }
   }
 
@@ -159,6 +174,11 @@
     align-items: center;
     position: relative;
     z-index: 5;
+
+    @media only screen and (max-width: $size-m) {
+      justify-content: center;
+      padding: 2rem;
+    }
   }
 
   &__icon {
@@ -175,6 +195,10 @@
   text-align: center;
   color: var(--grey-light-4);
   padding: 2.5rem;
+
+  @media only screen and (max-width: $size-m) {
+    display: none;
+  }
 }
 
 // HOTEL GALLERY PHOTOS
@@ -349,6 +373,10 @@
     margin-right: auto;
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box; //if it was border-box the img would shrink to have the border around and having the same size as defined, so this way it will be content size + margin
     height: 4rem;
@@ -357,7 +385,7 @@
     border: 3px solid var(--color-white);
 
     &:not(:last-child) {
-      margin-right: -1.6rem;
+      margin-right: -2rem;
     }
   }
 }
@@ -371,6 +399,11 @@
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+
+  @media only screen and (max-width: $size-m) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 
   &__text {
     margin-bottom: 2rem;
@@ -430,6 +463,10 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @media only screen and (max-width: $size-m) {
+    padding: 2.5rem 0;
+  }
 
   &__heading {
     font-size: 2rem;
