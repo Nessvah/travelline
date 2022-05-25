@@ -340,9 +340,6 @@
     margin-right: auto;
   }
 
-  &__friends {
-  }
-
   &__photo {
     box-sizing: content-box; //if it was border-box the img would shrink to have the border around and having the same size as defined, so this way it will be content size + margin
     height: 4rem;
