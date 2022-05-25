@@ -19,6 +19,9 @@ USING CSS VARIABLES INSTEAD OF SASS
 
   //Shadow Box
   --shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+
+  //Line
+  --line: 1px solid var(--grey-light-2);
 }
 
 *,
