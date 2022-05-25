@@ -221,4 +221,48 @@
 
   &__rating {
   }
+
+  &__rating-avg {
+  }
+
+  &__rating-count {
+  }
+}
+
+// INLINE BUTTON
+.btn-inline {
+  border: none;
+  color: var(--primary-color);
+  font-size: inherit;
+  border-bottom: 1px solid currentcolor; //current color will make this the same color as specified in this class
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    color: var(--grey-dark-1);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
 }
