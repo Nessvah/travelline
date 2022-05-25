@@ -360,9 +360,13 @@
   box-shadow: var(--shadow);
   padding: 3rem;
   margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
 
   &__text {
     margin-bottom: 2rem;
+    position: relative;
+    z-index: 5;
   }
 
   &__user {
@@ -397,5 +401,17 @@
     color: var(--primary-color);
     font-size: 2.2rem;
     font-weight: 300;
+  }
+
+  &::before {
+    //glyphs will give us the code to enter
+    content: "\201C";
+    position: absolute;
+    top: -3rem;
+    left: -1rem;
+    font-size: 20rem;
+    line-height: 1;
+    color: var(--grey-light-2);
+    font-family: sans-serif; //changes the style of the quotations mark
   }
 }

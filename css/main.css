@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*COLORS
 USING CSS VARIABLES INSTEAD OF SASS
 */
@@ -388,9 +389,13 @@ body {
   box-shadow: var(--shadow);
   padding: 3rem;
   margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
 }
 .review__text {
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 5;
 }
 .review__user {
   display: flex;
@@ -419,6 +424,16 @@ body {
   color: var(--primary-color);
   font-size: 2.2rem;
   font-weight: 300;
+}
+.review::before {
+  content: "“";
+  position: absolute;
+  top: -3rem;
+  left: -1rem;
+  font-size: 20rem;
+  line-height: 1;
+  color: var(--grey-light-2);
+  font-family: sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
