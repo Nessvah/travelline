@@ -494,15 +494,18 @@ body {
   height: 1rem;
   width: 1rem;
   margin-right: 0.7rem;
-  /* Older browsers
-  background-image: url(/imgs/chevron-thin-right.svg);
-  background-size: cover; */
+  background-image: url(/imgs/chevron.svg);
+  background-size: cover;
   /* HAD TO PLACE BOTH WEBKIT AND NORMAL FOR IT TO WORK RIGHT ON CHROME */
-  background-color: var(--primary-color);
-  -webkit-mask-image: url(/imgs/chevron-thin-right.svg);
-  mask-image: url(/imgs/chevron-thin-right.svg);
-  -webkit-mask-size: cover;
-  mask-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .list__item::before {
+    background-color: var(--primary-color);
+    -webkit-mask-image: url(/imgs/chevron.svg);
+    mask-image: url(/imgs/chevron.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
 }
 
 .recommend {
