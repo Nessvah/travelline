@@ -16,6 +16,12 @@
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: $size-xs) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--grey-light-2);
+  }
+
   &__input {
     font-family: inherit;
     font-size: inherit;
@@ -179,12 +185,24 @@
       justify-content: center;
       padding: 2rem;
     }
+
+    @media only screen and (max-width: $size-s) {
+      flex-direction: column;
+      padding: 1.5rem 0.5rem;
+    }
   }
 
   &__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 2rem;
+
+    @media only screen and (max-width: $size-s) {
+      margin-right: 0;
+      margin-bottom: 0.7rem;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
 
@@ -225,6 +243,15 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: $size-s) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
+
+    @media only screen and (max-width: $size-xs) {
+      padding: 1.25rem 1rem;
+    }
   }
 
   &__stars {
@@ -256,16 +283,32 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: $size-s) {
+      padding: 0 1.5rem;
+    }
+
+    @media only screen and (max-width: $size-xs) {
+      margin: 0 0.5rem 0 1.2rem;
+    }
   }
 
   &__rating-avg {
     font-size: 2.25rem;
     font-weight: 300;
+
+    @media only screen and (max-width: $size-s) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
     font-size: 0.8rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $size-s) {
+      font-size: 0.5rem;
+    }
   }
 }
 
@@ -403,6 +446,11 @@
   @media only screen and (max-width: $size-m) {
     padding: 2rem;
     margin-bottom: 3rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  }
+
+  @media only screen and (max-width: $size-s) {
+    width: 100%;
   }
 
   &__text {

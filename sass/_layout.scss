@@ -22,6 +22,12 @@
   height: 7rem;
   background-color: var(--color-white);
   border-bottom: var(--line);
+
+  @media only screen and (max-width: $size-xs) {
+    height: 11rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
 }
 
 .main-content {
@@ -55,6 +61,10 @@
   @media only screen and (max-width: $size-m) {
     padding: 2.8rem;
   }
+
+  @media only screen and (max-width: $size-s) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -68,6 +78,11 @@
   @media only screen and (max-width: $size-m) {
     padding: 2rem;
     margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $size-s) {
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 

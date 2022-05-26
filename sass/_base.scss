@@ -30,6 +30,10 @@ USING CSS VARIABLES INSTEAD OF SASS
 $size-xl: 75em; //1200px
 $size-l: 68.75em; //1100px
 $size-m: 56.25em; //900px
+$size-s: 37.5em; //600px
+$size-xs: 31.25em; //500px
+
+//GLOBAL
 
 *,
 *::before,
@@ -45,6 +49,10 @@ html {
 
   @media only screen and (max-width: $size-l) {
     font-size: 50%;
+  }
+
+  @media only screen and (max-width: $size-xs) {
+    font-size: 35%;
   }
 }
 
